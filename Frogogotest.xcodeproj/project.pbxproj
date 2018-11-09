@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		653044472194D6B300732EFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653044462194D6B300732EFC /* AppDelegate.swift */; };
+		6530444E2194D6B400732EFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6530444D2194D6B400732EFC /* Assets.xcassets */; };
+		653044512194D6B400732EFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6530444F2194D6B400732EFC /* LaunchScreen.storyboard */; };
+		6530445A2194D74900732EFC /* FRUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653044592194D74900732EFC /* FRUserViewController.swift */; };
+		653044612194D79D00732EFC /* FRUsersServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6530445D2194D79D00732EFC /* FRUsersServiceAssembly.swift */; };
+		653044622194D79D00732EFC /* FRUsersServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6530445E2194D79D00732EFC /* FRUsersServiceImplementation.swift */; };
+		653044632194D79D00732EFC /* UsersListTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653044602194D79D00732EFC /* UsersListTarget.swift */; };
+		653044662194D81D00732EFC /* FRUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653044652194D81D00732EFC /* FRUserModel.swift */; };
+		653044692194D8D200732EFC /* FRUserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653044682194D8D200732EFC /* FRUserListPresenter.swift */; };
+		6530446B2194D9EE00732EFC /* FRUserListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6530446A2194D9EE00732EFC /* FRUserListAssembly.swift */; };
+		6530446D2194DA2500732EFC /* FRUserList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6530446C2194DA2500732EFC /* FRUserList.storyboard */; };
+		653044712194DB0C00732EFC /* FRUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6530446F2194DB0C00732EFC /* FRUserCell.xib */; };
+		653044722194DB0C00732EFC /* FRUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653044702194DB0C00732EFC /* FRUserCell.swift */; };
+		653044752194DC4000732EFC /* FRUserListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653044742194DC4000732EFC /* FRUserListFactory.swift */; };
+		653044782194DCFE00732EFC /* FRUserListCellObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653044772194DCFE00732EFC /* FRUserListCellObject.swift */; };
+		65827B7121954C8B00D916A1 /* FREditUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65827B7021954C8B00D916A1 /* FREditUserPresenter.swift */; };
+		65827B7321954C9B00D916A1 /* FREditUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65827B7221954C9B00D916A1 /* FREditUserController.swift */; };
+		65827B7721954D7700D916A1 /* FREditUserAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65827B7621954D7700D916A1 /* FREditUserAssembly.swift */; };
+		65827B7921954E3400D916A1 /* FREditUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65827B7821954E3400D916A1 /* FREditUser.storyboard */; };
+		65827B7F2195A31800D916A1 /* FRCreateUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65827B7E2195A31700D916A1 /* FRCreateUserPresenter.swift */; };
+		65827B812195A32C00D916A1 /* FRCreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65827B802195A32C00D916A1 /* FRCreateUserViewController.swift */; };
+		65827B832195A33900D916A1 /* FRCreateUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65827B822195A33900D916A1 /* FRCreateUser.storyboard */; };
+		65827B852195A3F800D916A1 /* FRCreateUserAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65827B842195A3F800D916A1 /* FRCreateUserAssembly.swift */; };
+		7830B2051B89A35890485E44 /* Pods_Frogogotest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F8D311C4EA8FC883CDA111 /* Pods_Frogogotest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02F5132FE32710603A4AFF16 /* Pods-Frogogotest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frogogotest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Frogogotest/Pods-Frogogotest.debug.xcconfig"; sourceTree = "<group>"; };
+		308110E5AD8CF2FBB7431954 /* Pods-Frogogotest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frogogotest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Frogogotest/Pods-Frogogotest.release.xcconfig"; sourceTree = "<group>"; };
+		653044432194D6B300732EFC /* Frogogotest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frogogotest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		653044462194D6B300732EFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6530444D2194D6B400732EFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		653044502194D6B400732EFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		653044522194D6B400732EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		653044592194D74900732EFC /* FRUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRUserViewController.swift; sourceTree = "<group>"; };
+		6530445D2194D79D00732EFC /* FRUsersServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRUsersServiceAssembly.swift; sourceTree = "<group>"; };
+		6530445E2194D79D00732EFC /* FRUsersServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRUsersServiceImplementation.swift; sourceTree = "<group>"; };
+		653044602194D79D00732EFC /* UsersListTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListTarget.swift; sourceTree = "<group>"; };
+		653044652194D81D00732EFC /* FRUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRUserModel.swift; sourceTree = "<group>"; };
+		653044682194D8D200732EFC /* FRUserListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRUserListPresenter.swift; sourceTree = "<group>"; };
+		6530446A2194D9EE00732EFC /* FRUserListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRUserListAssembly.swift; sourceTree = "<group>"; };
+		6530446C2194DA2500732EFC /* FRUserList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FRUserList.storyboard; sourceTree = "<group>"; };
+		6530446F2194DB0C00732EFC /* FRUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FRUserCell.xib; sourceTree = "<group>"; };
+		653044702194DB0C00732EFC /* FRUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRUserCell.swift; sourceTree = "<group>"; };
+		653044742194DC4000732EFC /* FRUserListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRUserListFactory.swift; sourceTree = "<group>"; };
+		653044772194DCFE00732EFC /* FRUserListCellObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRUserListCellObject.swift; sourceTree = "<group>"; };
+		65827B7021954C8B00D916A1 /* FREditUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FREditUserPresenter.swift; sourceTree = "<group>"; };
+		65827B7221954C9B00D916A1 /* FREditUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FREditUserController.swift; sourceTree = "<group>"; };
+		65827B7621954D7700D916A1 /* FREditUserAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FREditUserAssembly.swift; sourceTree = "<group>"; };
+		65827B7821954E3400D916A1 /* FREditUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FREditUser.storyboard; sourceTree = "<group>"; };
+		65827B7E2195A31700D916A1 /* FRCreateUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRCreateUserPresenter.swift; sourceTree = "<group>"; };
+		65827B802195A32C00D916A1 /* FRCreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRCreateUserViewController.swift; sourceTree = "<group>"; };
+		65827B822195A33900D916A1 /* FRCreateUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FRCreateUser.storyboard; sourceTree = "<group>"; };
+		65827B842195A3F800D916A1 /* FRCreateUserAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRCreateUserAssembly.swift; sourceTree = "<group>"; };
+		E6F8D311C4EA8FC883CDA111 /* Pods_Frogogotest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Frogogotest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		653044402194D6B300732EFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7830B2051B89A35890485E44 /* Pods_Frogogotest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B0162629B173DF428CA0C39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6F8D311C4EA8FC883CDA111 /* Pods_Frogogotest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6530443A2194D6B300732EFC = {
+			isa = PBXGroup;
+			children = (
+				653044452194D6B300732EFC /* Frogogotest */,
+				653044442194D6B300732EFC /* Products */,
+				888978AD574DDBB0BE2DF666 /* Pods */,
+				1B0162629B173DF428CA0C39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		653044442194D6B300732EFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				653044432194D6B300732EFC /* Frogogotest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		653044452194D6B300732EFC /* Frogogotest */ = {
+			isa = PBXGroup;
+			children = (
+				6530445B2194D79D00732EFC /* Network layer */,
+				653044582194D6C000732EFC /* Presentation */,
+				653044462194D6B300732EFC /* AppDelegate.swift */,
+				6530444D2194D6B400732EFC /* Assets.xcassets */,
+				6530444F2194D6B400732EFC /* LaunchScreen.storyboard */,
+				653044522194D6B400732EFC /* Info.plist */,
+			);
+			path = Frogogotest;
+			sourceTree = "<group>";
+		};
+		653044582194D6C000732EFC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				65827B7D2195A30300D916A1 /* CreateUserModule */,
+				65827B6F21954C7300D916A1 /* EditUserModule */,
+				653044672194D88800732EFC /* UserListModule */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6530445B2194D79D00732EFC /* Network layer */ = {
+			isa = PBXGroup;
+			children = (
+				653044642194D81D00732EFC /* UserModel */,
+				6530445C2194D79D00732EFC /* RestProvider */,
+				6530445F2194D79D00732EFC /* UserList */,
+			);
+			path = "Network layer";
+			sourceTree = "<group>";
+		};
+		6530445C2194D79D00732EFC /* RestProvider */ = {
+			isa = PBXGroup;
+			children = (
+				6530445D2194D79D00732EFC /* FRUsersServiceAssembly.swift */,
+				6530445E2194D79D00732EFC /* FRUsersServiceImplementation.swift */,
+			);
+			path = RestProvider;
+			sourceTree = "<group>";
+		};
+		6530445F2194D79D00732EFC /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				653044602194D79D00732EFC /* UsersListTarget.swift */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		653044642194D81D00732EFC /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				653044652194D81D00732EFC /* FRUserModel.swift */,
+			);
+			path = UserModel;
+			sourceTree = "<group>";
+		};
+		653044672194D88800732EFC /* UserListModule */ = {
+			isa = PBXGroup;
+			children = (
+				6530447A2194E75700732EFC /* Presenter */,
+				653044792194E74600732EFC /* View */,
+				6530446A2194D9EE00732EFC /* FRUserListAssembly.swift */,
+				6530446C2194DA2500732EFC /* FRUserList.storyboard */,
+			);
+			path = UserListModule;
+			sourceTree = "<group>";
+		};
+		6530446E2194DB0C00732EFC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6530446F2194DB0C00732EFC /* FRUserCell.xib */,
+				653044702194DB0C00732EFC /* FRUserCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		653044732194DC3100732EFC /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				653044742194DC4000732EFC /* FRUserListFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		653044762194DCEF00732EFC /* CellObjects */ = {
+			isa = PBXGroup;
+			children = (
+				653044772194DCFE00732EFC /* FRUserListCellObject.swift */,
+			);
+			path = CellObjects;
+			sourceTree = "<group>";
+		};
+		653044792194E74600732EFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6530446E2194DB0C00732EFC /* Cells */,
+				653044592194D74900732EFC /* FRUserViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6530447A2194E75700732EFC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				653044732194DC3100732EFC /* Factory */,
+				653044762194DCEF00732EFC /* CellObjects */,
+				653044682194D8D200732EFC /* FRUserListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		65827B6F21954C7300D916A1 /* EditUserModule */ = {
+			isa = PBXGroup;
+			children = (
+				65827B7521954CA600D916A1 /* View */,
+				65827B7421954C9F00D916A1 /* Presenter */,
+				65827B7621954D7700D916A1 /* FREditUserAssembly.swift */,
+				65827B7821954E3400D916A1 /* FREditUser.storyboard */,
+			);
+			path = EditUserModule;
+			sourceTree = "<group>";
+		};
+		65827B7421954C9F00D916A1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				65827B7021954C8B00D916A1 /* FREditUserPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		65827B7521954CA600D916A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65827B7221954C9B00D916A1 /* FREditUserController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65827B7D2195A30300D916A1 /* CreateUserModule */ = {
+			isa = PBXGroup;
+			children = (
+				65827B7E2195A31700D916A1 /* FRCreateUserPresenter.swift */,
+				65827B802195A32C00D916A1 /* FRCreateUserViewController.swift */,
+				65827B822195A33900D916A1 /* FRCreateUser.storyboard */,
+				65827B842195A3F800D916A1 /* FRCreateUserAssembly.swift */,
+			);
+			path = CreateUserModule;
+			sourceTree = "<group>";
+		};
+		888978AD574DDBB0BE2DF666 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02F5132FE32710603A4AFF16 /* Pods-Frogogotest.debug.xcconfig */,
+				308110E5AD8CF2FBB7431954 /* Pods-Frogogotest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		653044422194D6B300732EFC /* Frogogotest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653044552194D6B400732EFC /* Build configuration list for PBXNativeTarget "Frogogotest" */;
+			buildPhases = (
+				2240B31CF9D723B04FAD0A74 /* [CP] Check Pods Manifest.lock */,
+				6530443F2194D6B300732EFC /* Sources */,
+				653044402194D6B300732EFC /* Frameworks */,
+				653044412194D6B300732EFC /* Resources */,
+				DA755AB1063C31D51ADA8AD4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Frogogotest;
+			productName = Frogogotest;
+			productReference = 653044432194D6B300732EFC /* Frogogotest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6530443B2194D6B300732EFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FR;
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Pavel Grechikhin";
+				TargetAttributes = {
+					653044422194D6B300732EFC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6530443E2194D6B300732EFC /* Build configuration list for PBXProject "Frogogotest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6530443A2194D6B300732EFC;
+			productRefGroup = 653044442194D6B300732EFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				653044422194D6B300732EFC /* Frogogotest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		653044412194D6B300732EFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653044512194D6B400732EFC /* LaunchScreen.storyboard in Resources */,
+				65827B832195A33900D916A1 /* FRCreateUser.storyboard in Resources */,
+				65827B7921954E3400D916A1 /* FREditUser.storyboard in Resources */,
+				653044712194DB0C00732EFC /* FRUserCell.xib in Resources */,
+				6530446D2194DA2500732EFC /* FRUserList.storyboard in Resources */,
+				6530444E2194D6B400732EFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2240B31CF9D723B04FAD0A74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Frogogotest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA755AB1063C31D51ADA8AD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Frogogotest/Pods-Frogogotest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Frogogotest/Pods-Frogogotest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6530443F2194D6B300732EFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653044612194D79D00732EFC /* FRUsersServiceAssembly.swift in Sources */,
+				653044782194DCFE00732EFC /* FRUserListCellObject.swift in Sources */,
+				653044622194D79D00732EFC /* FRUsersServiceImplementation.swift in Sources */,
+				653044692194D8D200732EFC /* FRUserListPresenter.swift in Sources */,
+				65827B7321954C9B00D916A1 /* FREditUserController.swift in Sources */,
+				653044472194D6B300732EFC /* AppDelegate.swift in Sources */,
+				65827B7F2195A31800D916A1 /* FRCreateUserPresenter.swift in Sources */,
+				6530445A2194D74900732EFC /* FRUserViewController.swift in Sources */,
+				653044662194D81D00732EFC /* FRUserModel.swift in Sources */,
+				653044722194DB0C00732EFC /* FRUserCell.swift in Sources */,
+				65827B852195A3F800D916A1 /* FRCreateUserAssembly.swift in Sources */,
+				65827B812195A32C00D916A1 /* FRCreateUserViewController.swift in Sources */,
+				653044752194DC4000732EFC /* FRUserListFactory.swift in Sources */,
+				65827B7121954C8B00D916A1 /* FREditUserPresenter.swift in Sources */,
+				6530446B2194D9EE00732EFC /* FRUserListAssembly.swift in Sources */,
+				65827B7721954D7700D916A1 /* FREditUserAssembly.swift in Sources */,
+				653044632194D79D00732EFC /* UsersListTarget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6530444F2194D6B400732EFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				653044502194D6B400732EFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		653044532194D6B400732EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		653044542194D6B400732EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		653044562194D6B400732EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F5132FE32710603A4AFF16 /* Pods-Frogogotest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L95L34N5QL;
+				INFOPLIST_FILE = Frogogotest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gre4a.Frogogotest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		653044572194D6B400732EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 308110E5AD8CF2FBB7431954 /* Pods-Frogogotest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L95L34N5QL;
+				INFOPLIST_FILE = Frogogotest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gre4a.Frogogotest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6530443E2194D6B300732EFC /* Build configuration list for PBXProject "Frogogotest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653044532194D6B400732EFC /* Debug */,
+				653044542194D6B400732EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		653044552194D6B400732EFC /* Build configuration list for PBXNativeTarget "Frogogotest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653044562194D6B400732EFC /* Debug */,
+				653044572194D6B400732EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6530443B2194D6B300732EFC /* Project object */;
+}

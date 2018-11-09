@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create User View Controller-->
+        <scene sceneID="qfd-s9-wgu">
+            <objects>
+                <viewController storyboardIdentifier="FRCreateUserViewController" id="biF-h1-maw" customClass="FRCreateUserViewController" customModule="Frogogotest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sCX-Cf-5f0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNi-qA-eCU">
+                                <rect key="frame" x="299" y="20" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gRd-55-z1U"/>
+                                    <constraint firstAttribute="width" constant="60" id="n37-Vf-0rE"/>
+                                </constraints>
+                                <state key="normal" title="Закрыть"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTZ-G8-P8R">
+                                <rect key="frame" x="16" y="80" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="C2E-r0-AaV"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5g-Yp-u5N">
+                                <rect key="frame" x="16" y="126" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="un1-9u-MGU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3hU-xi-fcX">
+                                <rect key="frame" x="16" y="172" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bfb-Sa-iOd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAA-ca-E0g">
+                                <rect key="frame" x="30" y="228" width="315" height="40"/>
+                                <color key="backgroundColor" red="0.41761356719999998" green="0.55124564629999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="twA-mX-LKk"/>
+                                </constraints>
+                                <state key="normal" title="Сохранить">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Некорректные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNS-dc-WMK">
+                                <rect key="frame" x="16" y="203" width="153" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="5WW-Hq-7cY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.2284493501" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8BA-ut-E1t" firstAttribute="trailing" secondItem="3hU-xi-fcX" secondAttribute="trailing" constant="16" id="1zj-Gt-WIr"/>
+                            <constraint firstItem="3hU-xi-fcX" firstAttribute="leading" secondItem="8BA-ut-E1t" secondAttribute="leading" constant="16" id="4qo-uw-APn"/>
+                            <constraint firstItem="gNi-qA-eCU" firstAttribute="top" secondItem="8BA-ut-E1t" secondAttribute="top" id="7Pm-iw-D0c"/>
+                            <constraint firstItem="3hU-xi-fcX" firstAttribute="top" secondItem="c5g-Yp-u5N" secondAttribute="bottom" constant="16" id="9aN-AX-yPx"/>
+                            <constraint firstItem="vNS-dc-WMK" firstAttribute="leading" secondItem="8BA-ut-E1t" secondAttribute="leading" constant="16" id="9ci-kP-NpU"/>
+                            <constraint firstItem="VAA-ca-E0g" firstAttribute="top" secondItem="3hU-xi-fcX" secondAttribute="bottom" constant="26" id="F9h-Om-YDr"/>
+                            <constraint firstItem="8BA-ut-E1t" firstAttribute="trailing" secondItem="c5g-Yp-u5N" secondAttribute="trailing" constant="16" id="Igo-gm-dc0"/>
+                            <constraint firstItem="VAA-ca-E0g" firstAttribute="leading" secondItem="8BA-ut-E1t" secondAttribute="leading" constant="30" id="KFV-zk-A9n"/>
+                            <constraint firstItem="YTZ-G8-P8R" firstAttribute="top" secondItem="gNi-qA-eCU" secondAttribute="bottom" constant="30" id="LGh-dB-XY3"/>
+                            <constraint firstItem="vNS-dc-WMK" firstAttribute="top" secondItem="3hU-xi-fcX" secondAttribute="bottom" constant="1" id="OMy-X9-0k2"/>
+                            <constraint firstItem="8BA-ut-E1t" firstAttribute="trailing" secondItem="YTZ-G8-P8R" secondAttribute="trailing" constant="16" id="SlY-ro-F7q"/>
+                            <constraint firstItem="YTZ-G8-P8R" firstAttribute="leading" secondItem="8BA-ut-E1t" secondAttribute="leading" constant="16" id="Tud-CB-pb1"/>
+                            <constraint firstItem="8BA-ut-E1t" firstAttribute="trailing" secondItem="VAA-ca-E0g" secondAttribute="trailing" constant="30" id="Xna-sy-Izc"/>
+                            <constraint firstItem="c5g-Yp-u5N" firstAttribute="top" secondItem="YTZ-G8-P8R" secondAttribute="bottom" constant="16" id="hhR-Kp-QIQ"/>
+                            <constraint firstItem="8BA-ut-E1t" firstAttribute="trailing" secondItem="gNi-qA-eCU" secondAttribute="trailing" constant="16" id="uJN-wr-i1v"/>
+                            <constraint firstItem="c5g-Yp-u5N" firstAttribute="leading" secondItem="8BA-ut-E1t" secondAttribute="leading" constant="16" id="xEd-Tj-1DL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8BA-ut-E1t"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="gNi-qA-eCU" id="d8J-Fp-HDF"/>
+                        <outlet property="emailTextField" destination="3hU-xi-fcX" id="9vE-BS-UiS"/>
+                        <outlet property="firstNameTextField" destination="YTZ-G8-P8R" id="B93-Ac-h4W"/>
+                        <outlet property="invalidEmailLabel" destination="vNS-dc-WMK" id="qUA-xH-Rw1"/>
+                        <outlet property="lastNameTextField" destination="c5g-Yp-u5N" id="ErN-Uf-6BN"/>
+                        <outlet property="saveButton" destination="VAA-ca-E0g" id="q4D-jK-GVE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JGE-c8-Y3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-169" y="-83"/>
+        </scene>
+    </scenes>
+</document>
