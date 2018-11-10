@@ -20,7 +20,7 @@ class FRUsersServiceImplementation: FRUsersService {
     
     private let provider = MoyaProvider<UsersListTarget>()
     
-    internal func obtainUsers(success: @escaping (_ response: [FRUserModel])->(), failure: @escaping ()->()){
+    func obtainUsers(success: @escaping (_ response: [FRUserModel])->(), failure: @escaping ()->()){
         provider.request(.usersList) { (result) in
             switch result {
             case .success(let response):
@@ -33,7 +33,7 @@ class FRUsersServiceImplementation: FRUsersService {
         }
     }
     
-    internal func saveUser(model: FRUserModel, index: Int, success: @escaping () -> (), failure: @escaping () -> ()) {
+    func saveUser(model: FRUserModel, index: Int, success: @escaping () -> (), failure: @escaping () -> ()) {
         provider.request(.editUser(model, index)) { (result) in
             switch result {
             case .success(_):
@@ -44,7 +44,7 @@ class FRUsersServiceImplementation: FRUsersService {
         }
     }
     
-    internal func createUser(model: FRUserModel, success: @escaping () -> (), failure: @escaping () -> ()) {
+    func createUser(model: FRUserModel, success: @escaping () -> (), failure: @escaping () -> ()) {
         provider.request(.createUser(model)) { (result) in
             switch result {
             case .success(_):
